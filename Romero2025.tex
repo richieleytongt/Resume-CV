@@ -1,0 +1,126 @@
+\documentclass[12pt,letterpaper]{article} % set main text size and page size
+% \documentclass[10pt,a4paper]{article}
+\usepackage[top=0.4in,bottom=0.4in,left=0.5in,right=0.5in]{geometry} % set page margins
+\usepackage{charter} % select font (comment out lines to use Computer Modern)
+% \usepackage[default]{lato}
+% \usepackage[sfdefault]{carlito}
+% \usepackage{tgpagella}
+% \usepackage{ebgaramond}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{plex-sans}
+% \usepackage{libertine}
+
+% font and input encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem} % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref} % format hyperlinks
+\usepackage{titlesec} % enable section title customization
+
+% disable text justification
+\raggedright
+
+% disable page numbering
+\pagestyle{empty}
+
+% ensure that the PDF output will be all unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above/below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above/below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=25pt}
+
+%%%%%%%% resume starts here %%%%%%%%%
+\begin{document}
+
+% name
+\centerline{\Huge{Richard D. Leyton-Romero}}
+
+\vspace{5pt} %spacing
+
+% contact information
+\centerline{{richieleytongt@outlook.com} | \href{https://www.linkedin.com/in/richieleytongt/}{linkedin.com/in/richieleytongt} | \href{https://github.com/richieleytongt}{github.com/richieleytongt}}
+
+\vspace{-6.5pt} %spacing
+
+%%%%%%% education section %%%%%%%
+\section*{Education}
+
+\textbf{\href{https://www.wits.ac.za/eie/}{University of the Witwatersrand}} -- PhD Electrical Engineering \hfill 2026 \\
+\vspace{-9pt}
+\begin{itemize}[itemsep=-4pt]
+    \item \textbf{Research Focus:} Motorsport and Optimal Control
+    \item \textbf{Supervised by:} \href{https://www.nrf.ac.za/about-us/nrf-awards/2022-2/a-rated-researchers-2022/professor-david-j-n-limebeer/}{Professor David J.N. Limebeer}
+    \item \textbf{Thesis:} The Usage of Optimal Control for the Analysis of Motorsport Performance.
+\end{itemize}
+
+\vspace{-5pt}
+\textbf{\href{https://www.brookes.ac.uk/courses/postgraduate/motorsport-engineering-msc}{Oxford Brookes University}} -- MSc Motorsport Engineering \hfill 2023 \\
+\vspace{-9pt}
+\begin{itemize}[itemsep =-4pt]
+    \item \textbf{Dissertation:} The Effects of Race Vehicle Setup on Lap-by-Lap Tire Warm-Up Response
+\end{itemize}
+
+\vspace{-5pt}
+\textbf{\href{https://www.usf.edu/engineering/me/}{University of South Florida}} -- BSME Mechanical Engineering \hfill 2020 \\
+\vspace{-9pt}
+\begin{itemize}[itemsep = -4pt]
+    \item \textbf{Minor:} Entrepreneurship
+    \item \textbf{Senior Design:} Mazda BP4W Camshaft Design
+\end{itemize}
+
+\vspace{-18.5pt} %spacing
+
+%%%%%%% publications section %%%%%%%
+
+\section*{Publications}
+
+Limebeer, D. J. N., Leyton Romero, R. D., and Massaro, M. (2025). An optimal control approach to the generation of yaw-moment diagrams. \textit{Vehicle System Dynamics}, 1–25. \href{https://doi.org/10.1080/00423114.2025.2471344}{doi.org/10.1080/00423114.2025.2471344}
+
+
+\vspace{-10.5pt} %spacing
+
+%%%%%%% experience section %%%%%%%
+
+\section*{Experience}
+\textbf{Owner/Operator,} Tampa Dynamics LLC -- Tampa, Florida \hfill 2019 -- 2023 \\
+\vspace{3pt}
+\textit{Provided engineering support to motorsport organizations such as Pirelli Motorsport, Ian Lacy Racing, Ferrari of North America, Riley Technologies, and Multimatic Motorsports.}
+\vspace{-5pt}
+\begin{itemize}
+  \item Optimized vehicle setups by assessing car and driver stability characteristics, leading to increased driver confidence.
+  \item Leveraged driver-in-the-loop simulation to pinpoint location-specific performance and stability issues, ensuring thorough preparation before arrival to an event.
+  \item Evaluated and optimized tire usage during track events by monitoring thermal activity and wear ensuring maximum vehicle performance.
+\end{itemize}
+
+\textbf{Powertrain Engineering Intern,} \href{https://www.compcams.com/}{Comp Cams} -- Memphis, TN \hfill Summer 2019 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Solved a common Chrysler engine failure by identifying critical point of defect and redesigning hydraulic valvetrain lifter to allow for free flow of oil.
+  \item Tuned control parameters for vintage Chevrolet engine retrofitted with modern electronic fuel injection by monitoring and adjusting air:fuel ratios and spark timing.
+  \item Provided powertrain consulting for race teams across various motorsport categories from professional drag racing to boat racing.
+\end{itemize}
+
+\vspace{-18.5pt} %spacing
+
+%%%%%%% skills section %%%%%%%
+\section*{Skills}
+\textbf{Mechanical Design and Simulation:} SOLIDWORKS (certified), CATIA V5, LS-DYNA, STAR-CCM+ \\
+\textbf{Programming and Data Analysis} MATLAB, Python (certified), C++, Excel VBA, JASP \\
+\textbf{Motorsport Data Visualization:} MoTeC i2, Cosworth Pi, WinTax4 \\
+
+\vspace{-10.5pt} %spacing
+
+
+
+
+
+
+%%%%%% resume ends here %%%%%%%
+
+\end{document}

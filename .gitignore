@@ -1,0 +1,9 @@
+# Stop tracking these file extensions
+*.aux
+*.fdb_latexmk
+*.txt
+*.out
+*.synctex
+*.fls
+*.log
+*.gz
